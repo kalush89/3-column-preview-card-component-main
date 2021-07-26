@@ -17,8 +17,75 @@ main {
     margin: auto;
     min-height: 100vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;  
     padding: 50px 0; 
 }
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.card > .sed {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    background: hsl(31, 77%, 52%);
+}
+
+.card > .suv {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    background: hsl(184, 100%, 22%);
+}
+
+.card > .lux {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    background: hsl(179, 100%, 13%);
+}
+
+img, h1, p, button {
+    margin: 5px;
+}
+
+img {
+    height: auto;
+    width: 20%;
+}
+
+button {
+    background-color: hsl(0, 0%, 95%);
+    display: block;
+    margin: 5px 0;
+    padding: 12px 0;
+    cursor: pointer;
+    width: 45%;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 20px;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.sed > button {
+    color:hsl(31, 77%, 52%);
+}
+
+.suv > button {
+    color:hsl(184, 100%, 22%);
+}
+
+.suv > button {
+    color:hsl(179, 100%, 13%);
+}
+
+
+
