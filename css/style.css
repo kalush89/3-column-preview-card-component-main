@@ -8,11 +8,11 @@
 body {
     font-size: 15px;
     background: hsl(0, 0%, 95%);
-    height: 100%;
+   
 }
 
 main {
-    max-width: 400px;
+    max-width: 375px;
     margin: auto;
     min-height: 100vh;
     display: flex;
@@ -20,7 +20,6 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;  
-    padding: 50px 0; 
 }
 
 .card {
@@ -29,13 +28,14 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center; 
+    margin: 30px;
 }
 
 .card > .sed {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 70%;
+    flex: 1;
     background: hsl(31, 77%, 52%);
     border-radius: 7px 7px 0 0;
 }
@@ -44,7 +44,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 70%;
+    flex: 1;
     background: hsl(184, 100%, 22%);
 }
 
@@ -52,27 +52,22 @@ main {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 70%;
+    flex: 1;
     background: hsl(179, 100%, 13%);
     border-radius: 0 0 7px 7px;
-}
-
-img, h1, p, button {
-    margin: 5px;
-
 }
 
 img {
     height: auto;
     width: 20%;
-    margin: 40px 0 20px 40px;
+    margin: 40px 0 10px 40px;
 }
 
 h1 {
     font-family: 'Big Shoulders Display', cursive;
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-transform: uppercase;
-    margin: 10px 0 20px 40px;
+    margin: 20px 0 10px 40px;
     color:  hsl(0, 0%, 95%);
     width: 80%;
 }
@@ -81,7 +76,7 @@ p {
     font-family: 'Lexend Deca', sans-serif;
     font-size: 13px;
     line-height: 1.8;
-    margin: 0 0 20px 40px;
+    margin: 15px 0 20px 40px;
     color: hsla(0, 0%, 100%, 0.75);
     width: 70%;
 }
@@ -89,14 +84,14 @@ p {
 button {
     background-color: hsl(0, 0%, 95%);
     display: block;
-    margin: 0 0 40px 40px;
+    margin: 20px 0 40px 40px;
     padding: 12px 0;
     cursor: pointer;
-    width: 45%;
+    width: 40%;
     border: none;
     text-align: center;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 200;
     border-radius: 20px;
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
 }
@@ -115,8 +110,8 @@ button {
 
 @media screen and (min-width: 600px) {
     main {
-        max-width: 1110px;
-        max-height: 446px;
+        max-width: 750px;
+        max-height: 550px;
     }
 
     .card {
@@ -124,26 +119,36 @@ button {
     }
 
     .card > .sed {
-        flex-basis: 20%;
+        width: 30%;
         border-radius: 7px 0 0 7px;
     }
 
     .card > .suv {
-        flex-basis: 20%;
+        width: 30%;
     }
 
     .card > .lux {
-        flex-basis: 20%;
+        width: 30%;
         border-radius: 0 7px 7px 0;
+    }
+
+    img {
+        margin: 40px 0 10px 40px;
     }
 
     h1 {
         font-size: 1.8rem;
+        margin: 20px 0 10px 40px;
     }
     
     p {
         font-size: 11px;
-        margin-bottom: 50px;
+        margin: 10px 0 40px 40px;
+    }
+
+    button {
+        width: 50%;
+        
     }
 }
 
