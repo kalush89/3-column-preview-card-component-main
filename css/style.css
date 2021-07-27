@@ -13,10 +13,11 @@ body {
 }
 
 main {
-    max-width: 375px;
+    max-width: 400px;
     margin: auto;
     min-height: 100vh;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;  
@@ -25,6 +26,7 @@ main {
 
 .card {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center; 
@@ -32,13 +34,17 @@ main {
 
 .card > .sed {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
+    justify-content: space-evenly;
     width: 70%;
     background: hsl(31, 77%, 52%);
+    border-radius: 7px 7px 0 0;
 }
 
 .card > .suv {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     width: 70%;
     background: hsl(184, 100%, 22%);
@@ -46,24 +52,45 @@ main {
 
 .card > .lux {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     width: 70%;
     background: hsl(179, 100%, 13%);
+    border-radius: 0 0 7px 7px;
 }
 
 img, h1, p, button {
     margin: 5px;
+
 }
 
 img {
     height: auto;
     width: 20%;
+    margin: 40px 0 20px 40px;
+}
+
+h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 10px 0 20px 40px;
+    color:  hsl(0, 0%, 95%);
+    width: 80%;
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 13px;
+    line-height: 1.8;
+    margin: 0 0 20px 40px;
+    color: hsla(0, 0%, 100%, 0.75);
+    width: 70%;
 }
 
 button {
     background-color: hsl(0, 0%, 95%);
     display: block;
-    margin: 5px 0;
+    margin: 0 0 40px 40px;
     padding: 12px 0;
     cursor: pointer;
     width: 45%;
@@ -85,6 +112,17 @@ button {
 
 .suv > button {
     color:hsl(179, 100%, 13%);
+}
+
+@media screen and (min-width: 500px) {
+    main {
+        max-width: 1110px;
+        max-height: 446px;
+    }
+
+    .card {
+        flex-direction: row;
+    }
 }
 
 
