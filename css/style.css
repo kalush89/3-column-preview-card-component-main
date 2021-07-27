@@ -6,7 +6,6 @@
 }
 
 body {
-    font-family: 'Big Shoulders Display', cursive;
     font-size: 15px;
     background: hsl(0, 0%, 95%);
     height: 100%;
@@ -36,7 +35,6 @@ main {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: space-evenly;
     width: 70%;
     background: hsl(31, 77%, 52%);
     border-radius: 7px 7px 0 0;
@@ -71,6 +69,7 @@ img {
 }
 
 h1 {
+    font-family: 'Big Shoulders Display', cursive;
     font-size: 2rem;
     text-transform: uppercase;
     margin: 10px 0 20px 40px;
@@ -114,7 +113,7 @@ button {
     color:hsl(179, 100%, 13%);
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
     main {
         max-width: 1110px;
         max-height: 446px;
@@ -122,6 +121,29 @@ button {
 
     .card {
         flex-direction: row;
+    }
+
+    .card > .sed {
+        flex-basis: 20%;
+        border-radius: 7px 0 0 7px;
+    }
+
+    .card > .suv {
+        flex-basis: 20%;
+    }
+
+    .card > .lux {
+        flex-basis: 20%;
+        border-radius: 0 7px 7px 0;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    p {
+        font-size: 11px;
+        margin-bottom: 50px;
     }
 }
 
